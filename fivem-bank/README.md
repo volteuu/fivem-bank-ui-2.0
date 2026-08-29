@@ -1,7 +1,7 @@
 # Fleeca Bank – NUI UI (React + TypeScript + Vite + Mantine)
 
-Front-end panelu bankowego do FiveM, zbudowany zgodnie z Twoim briefem: React 18 + TypeScript + Vite + Mantine 7,
-z zachowaniem podanej palety kolorów i fontu (Manrope) z Twojego snippetu CSS (`src/index.css`).
+Front-end panelu bankowego do FiveM, zbudowany zgodnie z briefem: React 18 + TypeScript + Vite + Mantine 7,
+z zachowaniem podanej palety kolorów i fontu (Manrope) z snippetu CSS (`src/index.css`).
 
 ## Uruchomienie lokalnie
 
