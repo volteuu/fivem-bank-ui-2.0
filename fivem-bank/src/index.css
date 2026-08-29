@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  font-family: "Manrope", system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg1: #06080d;
+  --bg2: #0e131c;
+  --bg3: #0b1018;
+  --color: #e7ecf3;
+  --border: 1px solid rgba(255, 255, 255, 0.08);
+  --border2: 2px solid rgba(255, 255, 255, 0.08);
+  --divider-color: #98a2b8;
+  --divider2: #c4cdd9;
+  --mcolor: #38d6ee;
+  --gradient: linear-gradient(135deg, #22d3ee, #3b82f6);
+  --button-active: rgba(56, 214, 238, 0.1);
+  --button-hover: rgba(255, 255, 255, 0.05);
+  --note-bg: rgba(56, 214, 238, 0.06);
+  --note-border: 1px solid rgba(56, 214, 238, 0.18);
+
+  --risk: #f2495c;
+  --risk-bg: rgba(242, 73, 92, 0.12);
+  --medium: #f2b90c;
+  --medium-bg: rgba(242, 185, 12, 0.12);
+  --normal: #3ecf8e;
+  --normal-bg: rgba(62, 207, 142, 0.12);
+
+  --personal-badge: #3ecf8e;
+  --personal-badge-bg: rgba(62, 207, 142, 0.14);
+  --shared-badge: #f2b90c;
+  --shared-badge-bg: rgba(242, 185, 12, 0.14);
+}
+
+html {
+  color-scheme: dark !important;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg1);
+  user-select: none;
+}
+
+body {
+  color: var(--color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app-shell-scroll {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.fb-card {
+  background: var(--bg2);
+  border: var(--border);
+  border-radius: 14px;
+}
+
+.fb-card-hover {
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+.fb-card-hover:hover {
+  border-color: rgba(56, 214, 238, 0.35);
+}
+
+.fb-gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.fb-nav-link {
+  border-radius: 10px;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.fb-locked {
+  filter: grayscale(1);
+  opacity: 0.55;
+  position: relative;
+}
+
+.fb-fade-in {
+  animation: fbFadeIn 220ms ease both;
+}
+
+@keyframes fbFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fb-fade-in {
+    animation: none;
+  }
+}
